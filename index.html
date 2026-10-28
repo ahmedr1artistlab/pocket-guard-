@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - PocketGuard Anti-Theft</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #1a73e8;
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e8f0fe;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #202124;
+            font-size: 20px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        p, li {
+            font-size: 16px;
+            color: #5f6368;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .last-updated {
+            font-style: italic;
+            color: #9aa0a6;
+            margin-bottom: 30px;
+        }
+        .highlight {
+            background-color: #e8f0fe;
+            padding: 15px;
+            border-left: 4px solid #1a73e8;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy for PocketGuard Anti-Theft</h1>
+        <p class="last-updated">Last Updated: July 20, 2026</p>
+
+        <p>Welcome to PocketGuard Anti-Theft ("PocketGuard", "we", "our", or "us"). We are committed to protecting your privacy and ensuring you have a secure experience while using our application. PocketGuard is built as an offline-first application to safeguard your phone against theft and unauthorized access in crowded urban areas.</p>
+
+        <div class="highlight">
+            <strong>Key Privacy Guarantee:</strong> PocketGuard is 100% OFFLINE. We do not collect, store, transmit, or share any of your personal data, sensor data, or passcodes to any external servers. All operations happen entirely on your local device.
+        </div>
+
+        <h2>1. Information We Access and Process</h2>
+        <p>To provide security features, PocketGuard accesses specific hardware sensors and system controls on your Android device. This data is processed in real-time, completely offline, and is never stored permanently or transmitted:</p>
+        <ul>
+            <li>
+                <strong>Proximity Sensor:</strong> Used exclusively to detect whether your device is placed inside a pocket, handbag, or drawer, or has been removed from it.
+            </li>
+            <li>
+                <strong>Gyroscope & Accelerometer:</strong> Used to monitor sudden or suspicious physical movements of the device when the anti-theft shield is active.
+            </li>
+            <li>
+                <strong>Audio & Volume Management:</strong> Used to play the police siren alarm at full volume and override external volume modifications to prevent thieves from silencing the alert.
+            </li>
+            <li>
+                <strong>Biometric Data (Fingerprint/FaceID):</strong> If you choose to disarm the alarm using your device's fingerprint or facial recognition, we use Android's secure system-level BiometricPrompt API. PocketGuard never accesses, views, or stores your raw biometric data; we only receive a secure success/fail confirmation from the Android OS.
+            </li>
+            <li>
+                <strong>Local Passcode/PIN:</strong> If you set a custom PIN inside the app, it is securely encrypted and stored locally using Android SharedPreferences. It never leaves your device.
+            </li>
+        </ul>
+
+        <h2>2. Data Storage & Offline Mode</h2>
+        <p>PocketGuard stores local configuration preferences (such as selected alarm tones, sensitivity levels, and passcode hashes) and a local historic log of triggered alarms (timestamp, trigger type, and whether the alarm was successfully disarmed). This data is saved using an offline SQLite/Room database located within the app's private sandbox and is cleared instantly if you uninstall the application.</p>
+
+        <h2>3. Monetization and Advertisements</h2>
+        <p>To support development and offer PocketGuard as a free-to-use utility, the application utilizes non-intrusive, local-style advertisements or simulated premium upgrade tokens. These ads do not track your browsing history or collect any personal identifiers, maintaining your strict privacy and enabling full functionality in remote, offline areas.</p>
+
+        <h2>4. System Permissions</h2>
+        <p>To function effectively, PocketGuard requires the following system permissions:</p>
+        <ul>
+            <li><strong>FOREGROUND_SERVICE:</strong> Needed to maintain sensor monitoring and sound the alarm even when the device is locked or the app is minimized.</li>
+            <li><strong>WAKE_LOCK:</strong> Needed to keep the processor running during active siren playback.</li>
+            <li><strong>VIBRATE:</strong> Used to trigger physical haptic alerts along with the audible alarm.</li>
+        </ul>
+
+        <h2>5. Children's Privacy</h2>
+        <p>Our services do not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children since we do not collect any personal data from any user.</p>
+
+        <h2>6. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. Since the app is completely offline, any policy updates will be packaged and updated in subsequent app releases. You are advised to review this policy periodically for any changes.</p>
+
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at <strong>support@pocketguard.local</strong>.</p>
+    </div>
+</body>
+</html>
